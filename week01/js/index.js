@@ -1,3 +1,3 @@
 const alertPoet = () => {
-    alert('황인찬')
+    alert('황동규')
 }
