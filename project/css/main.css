@@ -1,11 +1,129 @@
-
-/* HEADER */
-header {
-    background: #000;
-    height: 60px;
+/* COMMON */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 1 ;
+    color: rgb(255,255,255);
+    position:relative;
     width: 100%;
-    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
+div {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* HERO SECTION */
+main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 900px;
+    overflow :hidden;
+    margin: 0px auto;
+}
+
+main .wrapper #slider .intro__bg {
+    position: relative;
+    width: 100%;
+    min-height: 900px;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+main .wrapper #slider .intro__contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin-top: -45px!important;
+    text-align: center;
+}
+/* intro_logo */
+main .wrapper #slider .intro__contents .intro__logo {
+    position: relative;
+    width: 129.36px;
+    height: 131.04px;
+    margin: 0 auto 3px;
+    transform-origin: top;
 }
 
 
+
+/* intro_desc */
+main .wrapper #slider .intro__contents .intro__desc {
+    font-family: Poppins, Noto Sana KR;
+    font-size: 55px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    line-height: 70px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+main .wrapper #slider .intro__contents .intro__desc strong{
+    font-weight: 400;
+    width : 100px; 
+    white-space : nowrap;
+    overflow : hidden; 
+    text-overflow : ellipsis; 
+}
+
+
+/* intro__btn-con */
+
+main .wrapper #slider .intro__contents .intro__btn-con {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+main .wrapper #slider .intro__contents .intro__btn-con .intro__btn--google {
+    background-image:url(../images/btn_google.png) no repeat 50% 0;
+    background-size: cover;
+}
+
+main .wrapper #slider .intro__contents .intro__btn-con .intro__btn--app {
+    background-image:url(../images/btn_app.png) no repeat 50% 0;
+    background-size: cover;
+}
+
+
+/* SECTION */
+section .adventure {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    background: yellow ;
+}
+
+section .group {
+    background: url(../images/artist_bg.jpg) repeat-x 50% 0;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}

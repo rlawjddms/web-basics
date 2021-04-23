@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- 문자 인코딩 설정 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 뷰포트 렌더링 방식 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 페이지 제목 설정 -->
+    <title>썸머써클</title>
+
+    <!-- 파비콘(favorite icon) 설정 -->
+    <link rel="icon" href="./favicon.ico" />
+    <!-- 각 브라우저의 기본 스타일을 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- 구글 폰트: main.css보다 먼저 불러올 수 있도록 한다 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google material Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- main.css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="wrapper">
+            <!-- 헤더 세번째 섹션 -->
+            <div class="header--tertiary">
+                <!-- 실습 5. 지도 다운로드 및 멤버십 가입 안내 -->
+                <ul>
+                    <li class="map-download">
+                        지도 다운로드
+                        <span class="material-icons">
+                            file_download
+                        </span>
+                    </li>
+                    <li class="membership">
+                        2021 썸머써클 멤버십 가입하기
+                    </li>
+                </ul>
+                <!-- 실습 6. 배경음악 플레이어 -->
+                <div class="music__box">
+                    <div class="music__info">
+                        <p id="song__info"></p>
+                    </div>
+                    <span id="headset--on" class="material-icons">
+                        headset
+                    </span>
+                    <span id="headset--off" class="material-icons">
+                        headset_off
+                    </span>
+                </div>
+                <div class="lang">en</div>
+            </div>
+            <div class="main">
+                <!-- 실습 1. 로고 I-->
+                <!-- 클릭하면 홈으로 이동하는 링크가 걸려있습니다 -->
+                <a href="/" class="logo">
+                    <img src="./images/logo.png" alt="로고">
+                </a>
+                <div class="menu">
+                    <!-- 헤더 두번째 섹션 -->
+                    <div class="header--secondary">
+                        <!-- 실습 4. 서브 메뉴 -->
+                        <div class="festival__date">
+                            2021.06.18 금 ~ 06.20 일
+                        </div>
+                        <ul class="sub">
+                            <a href="#about">
+                                <li>대하여</li>
+                            </a>
+                            <a href="#sponsor">
+                                <li>스폰서</li>
+                            </a>
+                            <a href="#volunteer">
+                                <li>자원활동</li>
+                            </a>
+                            <a href="#donate">
+                                <li>기부</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <!-- 헤더 첫번째 섹션 -->
+                    <div class="header--primary">
+                        <!-- 실습 2. 네비게이션 메뉴 -->
+                        <ul class="main">
+                            <li class="item">
+                                <div class="item__title">
+                                    <div class="item__name">프로그램</div>
+                                    <span class="material-icons">
+                                        keyboard_arrow_down
+                                    </span>
+                                </div>
+                                <div class="item__contents">
+                                    <ul>
+                                        <li>바람맞는 공연</li>
+                                        <li>무해한 플리마켓</li>
+                                        <li>파도타는 파티</li>
+                                        <li>고요한 영화관</li>
+                                        <li>간지러운 워크샵</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="item__title">
+                                    <div class="item__name">일정</div>
+                                    <span class="material-icons">
+                                        keyboard_arrow_down
+                                    </span>
+                                </div>
+                                <div class="item__contents">
+                                    <ul>
+                                        <li>18 금요일</li>
+                                        <li>19 토요일</li>
+                                        <li>20 일요일</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="item__title">
+                                    <div class="item__name">정보</div>
+                                    <span class="material-icons">
+                                        keyboard_arrow_down
+                                    </span>
+                                </div>
+                                <div class="item__contents">
+                                    <ul>
+                                        <li>이동거리</li>
+                                        <li>먹거리</li>
+                                        <li>마실거리</li>
+                                        <li>누울자리</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 실습 3. 검색창 -->
+                        <div class="search">
+                            <input id="search__box" placeholder="새소년과 긴 꿈" />
+                            <span class="material-icons">
+                                search
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- MAIN SECTION -->
+    <main id="about">
+        <div class="wrapper">
+            <div id="slider">
+                <div class="material-icons arrow--left">
+                    arrow_left
+                </div>
+                <div class="slide slide1">
+                    <div class="slide__content">
+                        <span>I1</span>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="slide__content">
+                        <span>I2</span>
+                    </div>
+                </div>
+                <div class="slide slide3">
+                    <div class="slide__content">
+                        <span>I3</span>
+                    </div>
+                </div>
+                <div class="slide slide4">
+                    <div class="slide__content">
+                        <span>I4</span>
+                    </div>
+                </div>
+                <div class="slide slide5">
+                    <div class="slide__content">
+                        <span>I5</span>
+                    </div>
+                </div>
+                <div class="slide slide6">
+                    <div class="slide__content">
+                        <span>I6</span>
+                    </div>
+                </div>
+                <div class="material-icons arrow--right">
+                    arrow_right
+                </div>
+                <div class="dots">
+                    <div class="dot dot1"></div>
+                    <div class="dot dot2"></div>
+                    <div class="dot dot3"></div>
+                    <div class="dot dot4"></div>
+                    <div class="dot dot5"></div>
+                    <div class="dot dot6"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- SPONSOR SECTION -->
+    <section id="sponsor" class="section section1">
+        <div class="wrapper">
+            <div class="grid">
+                <div class="circle">S1</div>
+                <div class="circle">S2</div>
+                <div class="circle">S3</div>
+                <div class="circle">S4</div>
+                <div class="circle">S5</div>
+                <div class="circle">S6</div>
+                <div class="circle">S7</div>
+                <div class="circle">S8</div>
+            </div>
+        </div>
+    </section>
+    <!-- VOLUNTEER SECTION -->
+    <section id="volunteer" class="section section2">
+        <div class="wrapper">
+            <div class="info__box info__box1">
+                <div class="col--left">V1</div>
+                <div class="col--right"></div>
+            </div>
+            <div class="info__box info__box2">
+                <div class="col--left">V2</div>
+                <div class="col--right"></div>
+            </div>
+        </div>
+    </section>
+    <!-- DONATE SECTION -->
+    <section id="donate" class="section section3">
+        <div class="wrapper">
+            <div class="donate__box donate__box1">
+                D1
+            </div>
+            <div class="donate__box donate__box2">
+                D2
+            </div>
+            <div class="donate__box donate__box3">
+                D3
+            </div>
+        </div>
+    </section>
+    <!-- SCROLL TO TOP -->
+    <img class="btn--scrollToTop" onclick="scrollToTop()"
+        src="https://purepng.com/public/uploads/large/purepng.com-watermelonfruitsslicewatermelonmelonsummer-fruitrefreshing-9815251818421yuvm.png"
+        alt="수박" />
+</body>
+
+</html>

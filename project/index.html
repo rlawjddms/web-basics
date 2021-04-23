@@ -13,12 +13,67 @@
     <!-- 각 브라우저에 적용되는 스타일 리셋 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <!-- 구글폰트:main.css보다 먼저 불러올 수 있도록 한다 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&family=Poppins:wght@100;400;500;700&display=swap" rel="stylesheet">
     <!-- google material design -->
-    <!-- 메인css 설정 -->
+
+    <!-- main.css 연결 -->
     <link rel="stylesheet" href="./css/main.css">
+    <!-- main.js 연결 -->
     <script defer src="js/main.js"></script>
 </head>
 <body>
-    <header> </header>
+    <!-- HEADER -->
+    <header>
+    </header>
+    <!-- MAIN SECTION -->
+    <main id="home">
+        <div class="wrapper">
+            <div id="slider">
+                <div class="inrto__bg" style="height: 924px;">
+                    <video muted autoplay loop>
+                        <source src="videos/headline_star_960x540_2_1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="intro__contents">
+                    <div class="intro__logo">
+                        <div class="intro__logo-inner" >
+                            <div class="intro__logo--2"></div>
+                            <div class="intro__logo--1"></div>
+                        </div>
+                    </div>
+                    <h2 class="intro__logo-txt"></h2>
+                    <div class="intro__desc" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <span>For Fans, With Aritists</span>
+                        <br>
+                        <strong>
+                            <span style="color:#00fffb">UNIVERSE</span><span>에서 오늘도 만나!</span>
+                            <strong></strong>
+                        </strong>
+                    </div>
+                </div>
+                <div class="intro__btn-con" >
+                    
+                </div>
+                <div class="intro__skip-btn"></div>
+            </div>
+           
+            
+        </div>
+    </main>
+    <!-- SECONDARY SECTION -->
+    <section class="adventure" style="height: 1383px;"></section>
+    <!-- TERTIARY SECTION GROUP -->
+    <section class= "group">
+        <div class="section__group">
+            <section id="news"></section>
+            <section id="artist" class="artist"></section>
+            <section class="event"></section>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer"></footer>
+    <!-- SCROLL TO TOP -->
 </body>
 </html>
